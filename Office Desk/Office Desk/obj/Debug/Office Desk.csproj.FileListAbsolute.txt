@@ -9,3 +9,6 @@ C:\Users\Vikas\Dropbox\CA\Office Desk\Office Desk\bin\Debug\Office Desk.pdb
 C:\Users\Vikas\Dropbox\CA\Office Desk\Office Desk\obj\Debug\Office Desk.exe
 C:\Users\Vikas\Dropbox\CA\Office Desk\Office Desk\obj\Debug\Office Desk.pdb
 C:\Users\Vikas\Dropbox\CA\Office Desk\Office Desk\obj\Debug\Office_Desk.Form2.resources
+C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\Office Desk.exe.config
+C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\obj\Debug\Office Desk.exe
+C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\obj\Debug\Office Desk.pdb
