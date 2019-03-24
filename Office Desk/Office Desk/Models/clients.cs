@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Office_Desk.Models
 {
+    /// <summary>
+    /// just checking
+    /// </summary>
      public class clients
     {
         public int ID { get; set; }
