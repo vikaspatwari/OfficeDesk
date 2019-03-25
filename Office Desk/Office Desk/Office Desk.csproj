@@ -48,6 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -91,7 +94,7 @@
     <Compile Include="Models\completed_tasks.cs" />
     <Compile Include="Models\current_tasks.cs" />
     <Compile Include="Models\file_index.cs" />
-    <Compile Include="Models\OfficeDeskDB.cs" />
+    <Compile Include="Models\Office_Desk.cs" />
     <Compile Include="Models\return_filling.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
