@@ -6,6 +6,7 @@ namespace Office_Desk.Models
     {
 
         public int ID { get; set; }
+        public int empId { get; set; }
         public DateTime DateOfAssignment { get; set; }
         public int ClientID { get; set; }
         public string SubjectWithParty { get; set; }
