@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="office_deskDataSet" targetNamespace="http://tempuri.org/office_deskDataSet.xsd" xmlns:mstns="http://tempuri.org/office_deskDataSet.xsd" xmlns="http://tempuri.org/office_deskDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="office_deskConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="office_deskConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Office_Desk.Properties.Settings.GlobalReference.Default.office_deskConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="clientsTableAdapter" GeneratorDataComponentClassName="clientsTableAdapter" Name="clients" UserDataComponentName="clientsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="office_deskConnectionString (Settings)" DbObjectName="office_desk.clients" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, name, contact_no, aadhar_no, pan_no, address FROM clients</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="completed_tasksTableAdapter" GeneratorDataComponentClassName="completed_tasksTableAdapter" Name="completed_tasks" UserDataComponentName="completed_tasksTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="office_deskConnectionString (Settings)" DbObjectName="office_desk.completed_tasks" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, DateOfAssignment, DateOfCompletion, ClientID, TaskDescription, assigner, assignee, status, FeeStatus, remarks FROM completed_tasks</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="current_tasksTableAdapter" GeneratorDataComponentClassName="current_tasksTableAdapter" Name="current_tasks" UserDataComponentName="current_tasksTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="office_deskConnectionString (Settings)" DbObjectName="office_desk.current_tasks" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, DateOfAssignment, ClientID, SubjectWithParty, areaOfWork, priority, TaskDescription, DocumentsSource, assigner, assignee, status, remarks FROM current_tasks</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="file_indexTableAdapter" GeneratorDataComponentClassName="file_indexTableAdapter" Name="file_index" UserDataComponentName="file_indexTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="office_deskConnectionString (Settings)" DbObjectName="office_desk.file_index" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, FileNo, FileAlphabet, ClientID, ClientKin, FileCategory, FileType, FileStatus, AssesseStatus, FileYear, ReturnStatus, AadharLinkStatus, remarks FROM file_index</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="return_fillingTableAdapter" GeneratorDataComponentClassName="return_fillingTableAdapter" Name="return_filling" UserDataComponentName="return_fillingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="office_deskConnectionString (Settings)" DbObjectName="office_desk.return_filling" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, ClientID, AssessementYear, DateOfFilling, DateOfDispatch, PrAckNo, type, EVC_No, DateOfEreciept, remarks FROM return_filling</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="office_deskDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="office_deskDataSet" msprop:Generator_UserDSName="office_deskDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="clients" msprop:Generator_TableClassName="clientsDataTable" msprop:Generator_TableVarName="tableclients" msprop:Generator_TablePropName="clients" msprop:Generator_RowDeletingName="clientsRowDeleting" msprop:Generator_RowChangingName="clientsRowChanging" msprop:Generator_RowEvHandlerName="clientsRowChangeEventHandler" msprop:Generator_RowDeletedName="clientsRowDeleted" msprop:Generator_UserTableName="clients" msprop:Generator_RowChangedName="clientsRowChanged" msprop:Generator_RowEvArgName="clientsRowChangeEvent" msprop:Generator_RowClassName="clientsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="completed_tasks" msprop:Generator_TableClassName="completed_tasksDataTable" msprop:Generator_TableVarName="tablecompleted_tasks" msprop:Generator_TablePropName="completed_tasks" msprop:Generator_RowDeletingName="completed_tasksRowDeleting" msprop:Generator_RowChangingName="completed_tasksRowChanging" msprop:Generator_RowEvHandlerName="completed_tasksRowChangeEventHandler" msprop:Generator_RowDeletedName="completed_tasksRowDeleted" msprop:Generator_UserTableName="completed_tasks" msprop:Generator_RowChangedName="completed_tasksRowChanged" msprop:Generator_RowEvArgName="completed_tasksRowChangeEvent" msprop:Generator_RowClassName="completed_tasksRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="current_tasks" msprop:Generator_TableClassName="current_tasksDataTable" msprop:Generator_TableVarName="tablecurrent_tasks" msprop:Generator_TablePropName="current_tasks" msprop:Generator_RowDeletingName="current_tasksRowDeleting" msprop:Generator_RowChangingName="current_tasksRowChanging" msprop:Generator_RowEvHandlerName="current_tasksRowChangeEventHandler" msprop:Generator_RowDeletedName="current_tasksRowDeleted" msprop:Generator_UserTableName="current_tasks" msprop:Generator_RowChangedName="current_tasksRowChanged" msprop:Generator_RowEvArgName="current_tasksRowChangeEvent" msprop:Generator_RowClassName="current_tasksRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="file_index" msprop:Generator_TableClassName="file_indexDataTable" msprop:Generator_TableVarName="tablefile_index" msprop:Generator_TablePropName="file_index" msprop:Generator_RowDeletingName="file_indexRowDeleting" msprop:Generator_RowChangingName="file_indexRowChanging" msprop:Generator_RowEvHandlerName="file_indexRowChangeEventHandler" msprop:Generator_RowDeletedName="file_indexRowDeleted" msprop:Generator_UserTableName="file_index" msprop:Generator_RowChangedName="file_indexRowChanged" msprop:Generator_RowEvArgName="file_indexRowChangeEvent" msprop:Generator_RowClassName="file_indexRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="return_filling" msprop:Generator_TableClassName="return_fillingDataTable" msprop:Generator_TableVarName="tablereturn_filling" msprop:Generator_TablePropName="return_filling" msprop:Generator_RowDeletingName="return_fillingRowDeleting" msprop:Generator_RowChangingName="return_fillingRowChanging" msprop:Generator_RowEvHandlerName="return_fillingRowChangeEventHandler" msprop:Generator_RowDeletedName="return_fillingRowDeleted" msprop:Generator_UserTableName="return_filling" msprop:Generator_RowChangedName="return_fillingRowChanged" msprop:Generator_RowEvArgName="return_fillingRowChangeEvent" msprop:Generator_RowClassName="return_fillingRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
