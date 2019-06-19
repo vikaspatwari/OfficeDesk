@@ -11,13 +11,13 @@ namespace Office_Desk.AppCode
     class getCurrentTasks
     {
 
-        public IEnumerable<current_tasks> getTasks(int empID)
+        public IEnumerable<currenttasks> getTasks(int empID)
         {
             OfficeDeskDB db = new OfficeDeskDB();
             var CD = db;
-             var CT = from current_tasks in db.current_taskss
-                                                      where current_tasks.empId == empID
-                                                      select current_tasks;
+             var CT = from currenttaskss in db.currenttaskss
+                                                      where currenttaskss.empId == empID
+                                                      select currenttaskss;
             
             return CT;
         }  

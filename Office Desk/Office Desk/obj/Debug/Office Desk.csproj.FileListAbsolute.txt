@@ -9,11 +9,6 @@ C:\Users\Vikas\Dropbox\CA\Office Desk\Office Desk\bin\Debug\Office Desk.pdb
 C:\Users\Vikas\Dropbox\CA\Office Desk\Office Desk\obj\Debug\Office Desk.exe
 C:\Users\Vikas\Dropbox\CA\Office Desk\Office Desk\obj\Debug\Office Desk.pdb
 C:\Users\Vikas\Dropbox\CA\Office Desk\Office Desk\obj\Debug\Office_Desk.Form2.resources
-C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\Office Desk.exe.config
-C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\Office Desk.exe
-C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\Office Desk.pdb
-C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\EntityFramework.dll
-C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\EntityFramework.xml
 C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\obj\Debug\Office_Desk.MainForm.resources
 C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\obj\Debug\Office_Desk.Form2.resources
 C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\obj\Debug\Office_Desk.ManageClient.resources
@@ -21,6 +16,10 @@ C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\obj\Debug\Of
 C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\obj\Debug\Office_Desk.Properties.Resources.resources
 C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\obj\Debug\Office_Desk.ReturnFillling.resources
 C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\obj\Debug\Office Desk.csproj.GenerateResource.Cache
+C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\Office Desk.exe.config
+C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\Office Desk.exe
+C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\Office Desk.pdb
+C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\EntityFramework.dll
+C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\EntityFramework.xml
 C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\obj\Debug\Office Desk.exe
 C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\obj\Debug\Office Desk.pdb
-C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\obj\Debug\Office Desk.csprojResolveAssemblyReference.cache

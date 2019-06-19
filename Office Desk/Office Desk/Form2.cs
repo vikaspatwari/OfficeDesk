@@ -29,10 +29,10 @@ namespace Office_Desk
             // Get The current tasks from the database 
             // Create a object to access data and pass on employee id whose tasks are to be fetched.
                 getCurrentTasks GCT = new getCurrentTasks();
-               IEnumerable<current_tasks> CT = GCT.getTasks(1);
+               IEnumerable<currenttasks> CT = GCT.getTasks(1);
             MessageBox.Show("iam herer 1");
             // populate the datagrid view with the  fetched "Task Data"
-            foreach (current_tasks t in CT)
+            foreach (currenttasks t in CT)
             {
                 MessageBox.Show("iam herer");
                 dataGridView1.Rows.Add(t.DateOfAssignment,t.ClientID,t.SubjectWithParty,t.areaOfWork,t.priority,t.TaskDescription,
