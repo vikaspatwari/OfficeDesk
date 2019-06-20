@@ -1,4 +1,4 @@
-﻿namespace Office_Desk.Models
+﻿namespace office_desk.Models
 {
     public class fileindex
     {

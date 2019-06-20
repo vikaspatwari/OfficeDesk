@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Office_Desk.AppCode;
-using Office_Desk.Models;
+using office_desk.AppCode;
+using office_desk.Models;
 
-namespace Office_Desk
+namespace office_desk
 {
     public partial class Form2 : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace Office_Desk
+﻿namespace office_desk
 {
     partial class ManageFileIndex
     {

@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-namespace Office_Desk.Models
+namespace office_desk.Models
 {
     //class representing database model
     class OfficeDeskDB : DbContext

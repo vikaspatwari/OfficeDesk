@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Office_Desk
+namespace office_desk
 {
     static class Program
     {
