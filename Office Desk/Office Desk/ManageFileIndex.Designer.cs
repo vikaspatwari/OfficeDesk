@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.btn_refresh = new System.Windows.Forms.Button();
+            this.btn_save = new System.Windows.Forms.Button();
+            this.Remarks = new System.Windows.Forms.TextBox();
+            this.assesse_status = new System.Windows.Forms.ComboBox();
+            this.file_category = new System.Windows.Forms.ComboBox();
+            this.file_type = new System.Windows.Forms.ComboBox();
+            this.file_status = new System.Windows.Forms.ComboBox();
+            this.return_status = new System.Windows.Forms.ComboBox();
+            this.client_DOI = new System.Windows.Forms.ComboBox();
+            this.client_kin = new System.Windows.Forms.TextBox();
+            this.client_name = new System.Windows.Forms.TextBox();
+            this.file_year = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.DOI = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -51,30 +51,38 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.file_number = new System.Windows.Forms.TextBox();
+            this.file_alphabet = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PAN = new System.Windows.Forms.Label();
+            this.Client_PAN = new System.Windows.Forms.TextBox();
+            this.GSTIN = new System.Windows.Forms.Label();
+            this.client_GSTIN = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.comboBox6);
-            this.groupBox1.Controls.Add(this.comboBox5);
-            this.groupBox1.Controls.Add(this.comboBox4);
-            this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.client_GSTIN);
+            this.groupBox1.Controls.Add(this.GSTIN);
+            this.groupBox1.Controls.Add(this.Client_PAN);
+            this.groupBox1.Controls.Add(this.PAN);
+            this.groupBox1.Controls.Add(this.btn_refresh);
+            this.groupBox1.Controls.Add(this.btn_save);
+            this.groupBox1.Controls.Add(this.Remarks);
+            this.groupBox1.Controls.Add(this.assesse_status);
+            this.groupBox1.Controls.Add(this.file_category);
+            this.groupBox1.Controls.Add(this.file_type);
+            this.groupBox1.Controls.Add(this.file_status);
+            this.groupBox1.Controls.Add(this.return_status);
+            this.groupBox1.Controls.Add(this.client_DOI);
+            this.groupBox1.Controls.Add(this.client_kin);
+            this.groupBox1.Controls.Add(this.client_name);
+            this.groupBox1.Controls.Add(this.file_year);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.DOI);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
@@ -83,8 +91,8 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.file_number);
+            this.groupBox1.Controls.Add(this.file_alphabet);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBox1);
@@ -96,100 +104,101 @@
             this.groupBox1.Text = "File Index";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // button2
+            // btn_refresh
             // 
-            this.button2.Location = new System.Drawing.Point(360, 417);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 27;
-            this.button2.Text = "Refresh";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_refresh.Location = new System.Drawing.Point(360, 417);
+            this.btn_refresh.Name = "btn_refresh";
+            this.btn_refresh.Size = new System.Drawing.Size(75, 23);
+            this.btn_refresh.TabIndex = 27;
+            this.btn_refresh.Text = "Refresh";
+            this.btn_refresh.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn_save
             // 
-            this.button1.Location = new System.Drawing.Point(248, 418);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_save.Location = new System.Drawing.Point(248, 418);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(75, 23);
+            this.btn_save.TabIndex = 26;
+            this.btn_save.Text = "Save";
+            this.btn_save.UseVisualStyleBackColor = true;
             // 
-            // textBox7
+            // Remarks
             // 
-            this.textBox7.Location = new System.Drawing.Point(248, 352);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(320, 20);
-            this.textBox7.TabIndex = 25;
+            this.Remarks.Location = new System.Drawing.Point(248, 352);
+            this.Remarks.Name = "Remarks";
+            this.Remarks.Size = new System.Drawing.Size(320, 20);
+            this.Remarks.TabIndex = 25;
             // 
-            // comboBox6
+            // assesse_status
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(649, 239);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(107, 21);
-            this.comboBox6.TabIndex = 24;
+            this.assesse_status.FormattingEnabled = true;
+            this.assesse_status.Location = new System.Drawing.Point(649, 239);
+            this.assesse_status.Name = "assesse_status";
+            this.assesse_status.Size = new System.Drawing.Size(107, 21);
+            this.assesse_status.TabIndex = 24;
             // 
-            // comboBox5
+            // file_category
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(635, 205);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(121, 21);
-            this.comboBox5.TabIndex = 23;
+            this.file_category.FormattingEnabled = true;
+            this.file_category.Location = new System.Drawing.Point(635, 205);
+            this.file_category.Name = "file_category";
+            this.file_category.Size = new System.Drawing.Size(121, 21);
+            this.file_category.TabIndex = 23;
             // 
-            // comboBox4
+            // file_type
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(248, 205);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 22;
+            this.file_type.FormattingEnabled = true;
+            this.file_type.Location = new System.Drawing.Point(248, 205);
+            this.file_type.Name = "file_type";
+            this.file_type.Size = new System.Drawing.Size(121, 21);
+            this.file_type.TabIndex = 22;
             // 
-            // comboBox3
+            // file_status
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(248, 239);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 21;
+            this.file_status.FormattingEnabled = true;
+            this.file_status.Location = new System.Drawing.Point(248, 239);
+            this.file_status.Name = "file_status";
+            this.file_status.Size = new System.Drawing.Size(121, 21);
+            this.file_status.TabIndex = 21;
+            this.file_status.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
-            // comboBox2
+            // return_status
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(248, 275);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(105, 21);
-            this.comboBox2.TabIndex = 20;
+            this.return_status.FormattingEnabled = true;
+            this.return_status.Location = new System.Drawing.Point(248, 275);
+            this.return_status.Name = "return_status";
+            this.return_status.Size = new System.Drawing.Size(105, 21);
+            this.return_status.TabIndex = 20;
             // 
-            // comboBox1
+            // client_DOI
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(248, 312);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(73, 21);
-            this.comboBox1.TabIndex = 19;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.client_DOI.FormattingEnabled = true;
+            this.client_DOI.Location = new System.Drawing.Point(248, 312);
+            this.client_DOI.Name = "client_DOI";
+            this.client_DOI.Size = new System.Drawing.Size(73, 21);
+            this.client_DOI.TabIndex = 19;
+            this.client_DOI.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // textBox6
+            // client_kin
             // 
-            this.textBox6.Location = new System.Drawing.Point(248, 168);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(186, 20);
-            this.textBox6.TabIndex = 18;
+            this.client_kin.Location = new System.Drawing.Point(248, 168);
+            this.client_kin.Name = "client_kin";
+            this.client_kin.Size = new System.Drawing.Size(186, 20);
+            this.client_kin.TabIndex = 18;
             // 
-            // textBox5
+            // client_name
             // 
-            this.textBox5.Location = new System.Drawing.Point(248, 131);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(188, 20);
-            this.textBox5.TabIndex = 17;
+            this.client_name.Location = new System.Drawing.Point(248, 131);
+            this.client_name.Name = "client_name";
+            this.client_name.Size = new System.Drawing.Size(188, 20);
+            this.client_name.TabIndex = 17;
             // 
-            // textBox4
+            // file_year
             // 
-            this.textBox4.Location = new System.Drawing.Point(635, 97);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(64, 20);
-            this.textBox4.TabIndex = 16;
+            this.file_year.Location = new System.Drawing.Point(635, 97);
+            this.file_year.Name = "file_year";
+            this.file_year.Size = new System.Drawing.Size(64, 20);
+            this.file_year.TabIndex = 16;
             // 
             // label13
             // 
@@ -200,15 +209,15 @@
             this.label13.TabIndex = 15;
             this.label13.Text = "Remarks";
             // 
-            // label12
+            // DOI
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(138, 321);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(103, 13);
-            this.label12.TabIndex = 14;
-            this.label12.Text = "Aadhaar Link Status";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+            this.DOI.AutoSize = true;
+            this.DOI.Location = new System.Drawing.Point(138, 321);
+            this.DOI.Name = "DOI";
+            this.DOI.Size = new System.Drawing.Size(54, 13);
+            this.DOI.TabIndex = 14;
+            this.DOI.Text = "DOI/DOB";
+            this.DOI.Click += new System.EventHandler(this.label12_Click);
             // 
             // label11
             // 
@@ -285,21 +294,21 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Client";
             // 
-            // textBox3
+            // file_number
             // 
-            this.textBox3.Location = new System.Drawing.Point(320, 97);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(49, 20);
-            this.textBox3.TabIndex = 4;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.file_number.Location = new System.Drawing.Point(320, 97);
+            this.file_number.Name = "file_number";
+            this.file_number.Size = new System.Drawing.Size(49, 20);
+            this.file_number.TabIndex = 4;
+            this.file_number.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // textBox2
+            // file_alphabet
             // 
-            this.textBox2.Location = new System.Drawing.Point(248, 97);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(42, 20);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.file_alphabet.Location = new System.Drawing.Point(248, 97);
+            this.file_alphabet.Name = "file_alphabet";
+            this.file_alphabet.Size = new System.Drawing.Size(42, 20);
+            this.file_alphabet.TabIndex = 3;
+            this.file_alphabet.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
@@ -325,6 +334,39 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(558, 20);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // PAN
+            // 
+            this.PAN.AutoSize = true;
+            this.PAN.Location = new System.Drawing.Point(566, 131);
+            this.PAN.Name = "PAN";
+            this.PAN.Size = new System.Drawing.Size(29, 13);
+            this.PAN.TabIndex = 28;
+            this.PAN.Text = "PAN";
+            // 
+            // Client_PAN
+            // 
+            this.Client_PAN.Location = new System.Drawing.Point(635, 123);
+            this.Client_PAN.Name = "Client_PAN";
+            this.Client_PAN.Size = new System.Drawing.Size(152, 20);
+            this.Client_PAN.TabIndex = 29;
+            // 
+            // GSTIN
+            // 
+            this.GSTIN.AutoSize = true;
+            this.GSTIN.Location = new System.Drawing.Point(566, 168);
+            this.GSTIN.Name = "GSTIN";
+            this.GSTIN.Size = new System.Drawing.Size(40, 13);
+            this.GSTIN.TabIndex = 30;
+            this.GSTIN.Text = "GSTIN";
+            // 
+            // client_GSTIN
+            // 
+            this.client_GSTIN.Location = new System.Drawing.Point(635, 160);
+            this.client_GSTIN.Name = "client_GSTIN";
+            this.client_GSTIN.Size = new System.Drawing.Size(152, 20);
+            this.client_GSTIN.TabIndex = 31;
             // 
             // ManageFileIndex
             // 
@@ -346,9 +388,9 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox file_alphabet;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox file_number;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
@@ -356,20 +398,24 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label DOI;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox client_kin;
+        private System.Windows.Forms.TextBox client_name;
+        private System.Windows.Forms.TextBox file_year;
+        private System.Windows.Forms.ComboBox client_DOI;
+        private System.Windows.Forms.ComboBox assesse_status;
+        private System.Windows.Forms.ComboBox file_category;
+        private System.Windows.Forms.ComboBox file_type;
+        private System.Windows.Forms.ComboBox file_status;
+        private System.Windows.Forms.ComboBox return_status;
+        private System.Windows.Forms.Button btn_refresh;
+        private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.TextBox Remarks;
+        private System.Windows.Forms.TextBox Client_PAN;
+        private System.Windows.Forms.Label PAN;
+        private System.Windows.Forms.TextBox client_GSTIN;
+        private System.Windows.Forms.Label GSTIN;
     }
 }

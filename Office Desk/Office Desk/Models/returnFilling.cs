@@ -2,6 +2,10 @@
 
 namespace office_desk.Models
 {
+    /// <summary>
+    /// This is the data model class for the information about financial returns filed by clients.
+    /// Data Object of This class will be used to fetch/save data in the returnfilling table in the database.
+    /// </summary>
     public class returnfilling
     {
         public int ID { get; set; }

@@ -2,7 +2,10 @@
 
 namespace office_desk.Models
 {
-    //class representing database model
+    /// <summary>
+    /// This class represents the schema of the database office_desk
+    /// Data Object of This class will be used to fetch/save data from various tables in the database.
+    /// </summary>
     class OfficeDeskDB : DbContext
     {
         public DbSet<clients> clientss { get; set; }

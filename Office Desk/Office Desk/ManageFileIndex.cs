@@ -61,5 +61,19 @@ namespace office_desk
         {
 
         }
+        /// <summary>
+        /// Code this serach box to get the clients details on the basis of name/PAN/GSTIN
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
