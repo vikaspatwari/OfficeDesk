@@ -12,6 +12,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -91,11 +91,11 @@
       <DependentUpon>ManageFileIndex.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\clients.cs" />
-    <Compile Include="Models\completed_tasks.cs" />
-    <Compile Include="Models\current_tasks.cs" />
-    <Compile Include="Models\file_index.cs" />
-    <Compile Include="Models\Office_Desk.cs" />
-    <Compile Include="Models\return_filling.cs" />
+    <Compile Include="Models\completedtasks.cs" />
+    <Compile Include="Models\currenttasks.cs" />
+    <Compile Include="Models\fileindex.cs" />
+    <Compile Include="Models\office_desk.cs" />
+    <Compile Include="Models\returnfilling.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReturnFillling.cs">
@@ -128,16 +128,6 @@
     <EmbeddedResource Include="ReturnFillling.resx">
       <DependentUpon>ReturnFillling.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="office_deskDataSet.xsc">
-      <DependentUpon>office_deskDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="office_deskDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="office_deskDataSet.xss">
-      <DependentUpon>office_deskDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -1,5 +1,9 @@
-﻿namespace Office_Desk.Models
+﻿namespace office_desk.Models
 {
+    /// <summary>
+    /// This is data model class for clients
+    /// Data Object of This class will be used to fetch/save data in the clients table in the database.
+    /// </summary>
     public class clients
     {
         public int ID { get; set; }

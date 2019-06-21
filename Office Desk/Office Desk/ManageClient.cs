@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Office_Desk
+namespace office_desk
 {
     public partial class ManageClient: Form
     {

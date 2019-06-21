@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Office_Desk
+namespace office_desk
 {
     public partial class ManageFileIndex : Form
     {
@@ -58,6 +58,20 @@ namespace Office_Desk
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        /// <summary>
+        /// Code this serach box to get the clients details on the basis of name/PAN/GSTIN
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

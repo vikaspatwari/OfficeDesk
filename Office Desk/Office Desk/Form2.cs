@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Office_Desk.AppCode;
-using Office_Desk.Models;
+using office_desk.AppCode;
+using office_desk.Models;
 
-namespace Office_Desk
+namespace office_desk
 {
     public partial class Form2 : Form
     {
@@ -29,10 +29,10 @@ namespace Office_Desk
             // Get The current tasks from the database 
             // Create a object to access data and pass on employee id whose tasks are to be fetched.
                 getCurrentTasks GCT = new getCurrentTasks();
-               IEnumerable<current_tasks> CT = GCT.getTasks(1);
+               IEnumerable<currenttasks> CT = GCT.getTasks(1);
             MessageBox.Show("iam herer 1");
             // populate the datagrid view with the  fetched "Task Data"
-            foreach (current_tasks t in CT)
+            foreach (currenttasks t in CT)
             {
                 MessageBox.Show("iam herer");
                 dataGridView1.Rows.Add(t.DateOfAssignment,t.ClientID,t.SubjectWithParty,t.areaOfWork,t.priority,t.TaskDescription,

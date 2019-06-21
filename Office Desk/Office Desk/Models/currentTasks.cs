@@ -1,8 +1,12 @@
 ﻿using System;
 
-namespace Office_Desk.Models
+namespace office_desk.Models
 {
-    public class current_tasks
+    /// <summary>
+    /// This is the data model class for the tasks which are currently assigned to the users.
+    /// Data Object of This class will be used to fetch/save data in the currenttasks table in the database.
+    /// </summary>
+    public class currenttasks
     {
 
         public int ID { get; set; }

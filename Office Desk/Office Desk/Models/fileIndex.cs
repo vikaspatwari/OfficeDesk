@@ -1,6 +1,10 @@
-﻿namespace Office_Desk.Models
+﻿namespace office_desk.Models
 {
-    public class file_index
+    /// <summary>
+    /// This is the data model class for the index of the physical files stored in the database.
+    /// Data Object of This class will be used to fetch/save data in the fileindex table in the database.
+    /// </summary>
+    public class fileindex
     {
         public int ID { get; set; }
         public int FileNo { get; set; }

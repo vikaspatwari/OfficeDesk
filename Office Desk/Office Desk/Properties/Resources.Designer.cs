@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Office_Desk.Properties
+namespace office_desk.Properties
 {
 
 

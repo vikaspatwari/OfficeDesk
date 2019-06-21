@@ -3,21 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Office_Desk.Models;
+using office_desk.Models;
 
-namespace Office_Desk.AppCode
+namespace office_desk.AppCode
 {
     // this class will be used to get the current tasks
     class getCurrentTasks
     {
-
-        public IEnumerable<current_tasks> getTasks(int empID)
+        /// <summary>
+        /// This function returs the current tasks which are assigned to the user
+        /// </summary>
+        /// <param name="empID"> The employee ID of the user</param>
+        /// <returns></returns>
+        public IEnumerable<currenttasks> getTasks(int empID)
         {
             OfficeDeskDB db = new OfficeDeskDB();
             var CD = db;
-             var CT = from current_tasks in db.current_taskss
-                                                      where current_tasks.empId == empID
-                                                      select current_tasks;
+             var CT = from currenttaskss in db.currenttaskss
+                                                      where currenttaskss.empId == empID
+                                                      select currenttaskss;
             
             return CT;
         }  
