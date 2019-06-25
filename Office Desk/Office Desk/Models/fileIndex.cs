@@ -17,8 +17,8 @@
         public string AssesseStatus { get; set; }
         public string FileYear { get; set; }
         public string ReturnStatus { get; set; }
-        public string AadharLinkStatus { get; set; }
-        public string remark { get; set; }
+        public string DateOfIncorporation { get; set; }
+        public string remarks { get; set; }
 
     }
 }

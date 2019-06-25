@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.client_GSTIN = new System.Windows.Forms.TextBox();
+            this.GSTIN = new System.Windows.Forms.Label();
+            this.Client_PAN = new System.Windows.Forms.TextBox();
+            this.PAN = new System.Windows.Forms.Label();
             this.btn_refresh = new System.Windows.Forms.Button();
             this.btn_save = new System.Windows.Forms.Button();
             this.Remarks = new System.Windows.Forms.TextBox();
@@ -55,11 +59,7 @@
             this.file_alphabet = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.PAN = new System.Windows.Forms.Label();
-            this.Client_PAN = new System.Windows.Forms.TextBox();
-            this.GSTIN = new System.Windows.Forms.Label();
-            this.client_GSTIN = new System.Windows.Forms.TextBox();
+            this.search_textbox = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,7 +95,7 @@
             this.groupBox1.Controls.Add(this.file_alphabet);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.search_textbox);
             this.groupBox1.Location = new System.Drawing.Point(68, 67);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(793, 459);
@@ -103,6 +103,38 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "File Index";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // client_GSTIN
+            // 
+            this.client_GSTIN.Location = new System.Drawing.Point(635, 160);
+            this.client_GSTIN.Name = "client_GSTIN";
+            this.client_GSTIN.Size = new System.Drawing.Size(152, 20);
+            this.client_GSTIN.TabIndex = 31;
+            // 
+            // GSTIN
+            // 
+            this.GSTIN.AutoSize = true;
+            this.GSTIN.Location = new System.Drawing.Point(566, 168);
+            this.GSTIN.Name = "GSTIN";
+            this.GSTIN.Size = new System.Drawing.Size(40, 13);
+            this.GSTIN.TabIndex = 30;
+            this.GSTIN.Text = "GSTIN";
+            // 
+            // Client_PAN
+            // 
+            this.Client_PAN.Location = new System.Drawing.Point(635, 123);
+            this.Client_PAN.Name = "Client_PAN";
+            this.Client_PAN.Size = new System.Drawing.Size(152, 20);
+            this.Client_PAN.TabIndex = 29;
+            // 
+            // PAN
+            // 
+            this.PAN.AutoSize = true;
+            this.PAN.Location = new System.Drawing.Point(566, 131);
+            this.PAN.Name = "PAN";
+            this.PAN.Size = new System.Drawing.Size(29, 13);
+            this.PAN.TabIndex = 28;
+            this.PAN.Text = "PAN";
             // 
             // btn_refresh
             // 
@@ -328,45 +360,13 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Search";
             // 
-            // textBox1
+            // search_textbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(141, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(558, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // PAN
-            // 
-            this.PAN.AutoSize = true;
-            this.PAN.Location = new System.Drawing.Point(566, 131);
-            this.PAN.Name = "PAN";
-            this.PAN.Size = new System.Drawing.Size(29, 13);
-            this.PAN.TabIndex = 28;
-            this.PAN.Text = "PAN";
-            // 
-            // Client_PAN
-            // 
-            this.Client_PAN.Location = new System.Drawing.Point(635, 123);
-            this.Client_PAN.Name = "Client_PAN";
-            this.Client_PAN.Size = new System.Drawing.Size(152, 20);
-            this.Client_PAN.TabIndex = 29;
-            // 
-            // GSTIN
-            // 
-            this.GSTIN.AutoSize = true;
-            this.GSTIN.Location = new System.Drawing.Point(566, 168);
-            this.GSTIN.Name = "GSTIN";
-            this.GSTIN.Size = new System.Drawing.Size(40, 13);
-            this.GSTIN.TabIndex = 30;
-            this.GSTIN.Text = "GSTIN";
-            // 
-            // client_GSTIN
-            // 
-            this.client_GSTIN.Location = new System.Drawing.Point(635, 160);
-            this.client_GSTIN.Name = "client_GSTIN";
-            this.client_GSTIN.Size = new System.Drawing.Size(152, 20);
-            this.client_GSTIN.TabIndex = 31;
+            this.search_textbox.Location = new System.Drawing.Point(141, 38);
+            this.search_textbox.Name = "search_textbox";
+            this.search_textbox.Size = new System.Drawing.Size(558, 20);
+            this.search_textbox.TabIndex = 0;
+            this.search_textbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // ManageFileIndex
             // 
@@ -386,7 +386,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox search_textbox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox file_alphabet;
         private System.Windows.Forms.Label label2;

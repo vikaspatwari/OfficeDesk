@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace office_desk.Properties {
+namespace Office_Desk.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -25,11 +25,12 @@ namespace office_desk.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;password=vikas;database=office_desk")]
-        public string office_deskConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ULTIMATE\\SQLEXPRESS;Initial Catalog=office_desk.Models.OfficeDeskDB;I" +
+            "ntegrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=" +
+            "False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False")]
+        public string officedeskconnection {
             get {
-                return ((string)(this["office_deskConnectionString"]));
+                return ((string)(this["officedeskconnection"]));
             }
         }
     }

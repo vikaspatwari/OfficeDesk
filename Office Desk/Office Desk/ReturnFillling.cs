@@ -26,5 +26,20 @@ namespace office_desk
         {
 
         }
+
+       private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ReturnFillling_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void return_remarks_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

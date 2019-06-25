@@ -31,16 +31,16 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.client_email = new System.Windows.Forms.TextBox();
             this.Email = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.bank_accountType = new System.Windows.Forms.ComboBox();
             this.accounttype = new System.Windows.Forms.Label();
             this.bankaccount = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.bank_accountNo = new System.Windows.Forms.TextBox();
             this.client_group = new System.Windows.Forms.TextBox();
             this.group = new System.Windows.Forms.Label();
             this.client_GSTIN = new System.Windows.Forms.TextBox();
             this.GSTIN = new System.Windows.Forms.Label();
             this.Aadhaar_link_status = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.search_textbox = new System.Windows.Forms.TextBox();
             this.search = new System.Windows.Forms.Label();
             this.btn_cancel = new System.Windows.Forms.Button();
             this.btn_save = new System.Windows.Forms.Button();
@@ -61,16 +61,16 @@
             // 
             this.groupBox1.Controls.Add(this.client_email);
             this.groupBox1.Controls.Add(this.Email);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.bank_accountType);
             this.groupBox1.Controls.Add(this.accounttype);
             this.groupBox1.Controls.Add(this.bankaccount);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.bank_accountNo);
             this.groupBox1.Controls.Add(this.client_group);
             this.groupBox1.Controls.Add(this.group);
             this.groupBox1.Controls.Add(this.client_GSTIN);
             this.groupBox1.Controls.Add(this.GSTIN);
             this.groupBox1.Controls.Add(this.Aadhaar_link_status);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.search_textbox);
             this.groupBox1.Controls.Add(this.search);
             this.groupBox1.Controls.Add(this.btn_cancel);
             this.groupBox1.Controls.Add(this.btn_save);
@@ -107,13 +107,13 @@
             this.Email.TabIndex = 23;
             this.Email.Text = "Email";
             // 
-            // comboBox1
+            // bank_accountType
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(521, 249);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 22;
+            this.bank_accountType.FormattingEnabled = true;
+            this.bank_accountType.Location = new System.Drawing.Point(521, 249);
+            this.bank_accountType.Name = "bank_accountType";
+            this.bank_accountType.Size = new System.Drawing.Size(121, 21);
+            this.bank_accountType.TabIndex = 22;
             // 
             // accounttype
             // 
@@ -133,12 +133,12 @@
             this.bankaccount.TabIndex = 20;
             this.bankaccount.Text = "Bank A/C No.";
             // 
-            // textBox2
+            // bank_accountNo
             // 
-            this.textBox2.Location = new System.Drawing.Point(295, 252);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(165, 20);
-            this.textBox2.TabIndex = 19;
+            this.bank_accountNo.Location = new System.Drawing.Point(295, 252);
+            this.bank_accountNo.Name = "bank_accountNo";
+            this.bank_accountNo.Size = new System.Drawing.Size(165, 20);
+            this.bank_accountNo.TabIndex = 19;
             // 
             // client_group
             // 
@@ -181,12 +181,12 @@
             this.Aadhaar_link_status.TabIndex = 14;
             this.Aadhaar_link_status.Text = "Aadhar Link Status";
             // 
-            // textBox1
+            // search_textbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(230, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(495, 20);
-            this.textBox1.TabIndex = 13;
+            this.search_textbox.Location = new System.Drawing.Point(230, 17);
+            this.search_textbox.Name = "search_textbox";
+            this.search_textbox.Size = new System.Drawing.Size(495, 20);
+            this.search_textbox.TabIndex = 13;
             // 
             // search
             // 
@@ -327,12 +327,12 @@
         private System.Windows.Forms.TextBox client_GSTIN;
         private System.Windows.Forms.Label GSTIN;
         private System.Windows.Forms.Label Aadhaar_link_status;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox search_textbox;
         private System.Windows.Forms.Label search;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox bank_accountType;
         private System.Windows.Forms.Label accounttype;
         private System.Windows.Forms.Label bankaccount;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox bank_accountNo;
         private System.Windows.Forms.TextBox client_group;
         private System.Windows.Forms.Label group;
         private System.Windows.Forms.TextBox client_email;
