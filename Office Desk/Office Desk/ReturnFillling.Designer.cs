@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.return_remarks = new System.Windows.Forms.TextBox();
+            this.Remarks = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.evc_verication_status = new System.Windows.Forms.TextBox();
+            this.dispatch_date = new System.Windows.Forms.DateTimePicker();
+            this.returnFilling_date = new System.Windows.Forms.DateTimePicker();
+            this.returnFilling_ackNo = new System.Windows.Forms.TextBox();
+            this.assessment_year = new System.Windows.Forms.TextBox();
+            this.client_name = new System.Windows.Forms.ComboBox();
             this.Evcverification = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Remarks = new System.Windows.Forms.Label();
-            this.return_remarks = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,12 +54,12 @@
             this.groupBox1.Controls.Add(this.Remarks);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.evc_verication_status);
+            this.groupBox1.Controls.Add(this.dispatch_date);
+            this.groupBox1.Controls.Add(this.returnFilling_date);
+            this.groupBox1.Controls.Add(this.returnFilling_ackNo);
+            this.groupBox1.Controls.Add(this.assessment_year);
+            this.groupBox1.Controls.Add(this.client_name);
             this.groupBox1.Controls.Add(this.Evcverification);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -72,6 +72,23 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Return Filling";
+            // 
+            // return_remarks
+            // 
+            this.return_remarks.Location = new System.Drawing.Point(345, 278);
+            this.return_remarks.Name = "return_remarks";
+            this.return_remarks.Size = new System.Drawing.Size(359, 20);
+            this.return_remarks.TabIndex = 19;
+            this.return_remarks.TextChanged += new System.EventHandler(this.return_remarks_TextChanged);
+            // 
+            // Remarks
+            // 
+            this.Remarks.AutoSize = true;
+            this.Remarks.Location = new System.Drawing.Point(211, 278);
+            this.Remarks.Name = "Remarks";
+            this.Remarks.Size = new System.Drawing.Size(49, 13);
+            this.Remarks.TabIndex = 18;
+            this.Remarks.Text = "Remarks";
             // 
             // button2
             // 
@@ -92,49 +109,50 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox3
+            // evc_verication_status
             // 
-            this.textBox3.Location = new System.Drawing.Point(345, 245);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(41, 20);
-            this.textBox3.TabIndex = 14;
+            this.evc_verication_status.Location = new System.Drawing.Point(345, 245);
+            this.evc_verication_status.Name = "evc_verication_status";
+            this.evc_verication_status.Size = new System.Drawing.Size(41, 20);
+            this.evc_verication_status.TabIndex = 14;
             // 
-            // dateTimePicker2
+            // dispatch_date
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(345, 162);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 12;
+            this.dispatch_date.Location = new System.Drawing.Point(345, 162);
+            this.dispatch_date.Name = "dispatch_date";
+            this.dispatch_date.Size = new System.Drawing.Size(200, 20);
+            this.dispatch_date.TabIndex = 12;
+            this.dispatch_date.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
-            // dateTimePicker1
+            // returnFilling_date
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(345, 122);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 11;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.returnFilling_date.Location = new System.Drawing.Point(345, 122);
+            this.returnFilling_date.Name = "returnFilling_date";
+            this.returnFilling_date.Size = new System.Drawing.Size(200, 20);
+            this.returnFilling_date.TabIndex = 11;
+            this.returnFilling_date.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // textBox2
+            // returnFilling_ackNo
             // 
-            this.textBox2.Location = new System.Drawing.Point(345, 201);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(135, 20);
-            this.textBox2.TabIndex = 10;
+            this.returnFilling_ackNo.Location = new System.Drawing.Point(345, 201);
+            this.returnFilling_ackNo.Name = "returnFilling_ackNo";
+            this.returnFilling_ackNo.Size = new System.Drawing.Size(135, 20);
+            this.returnFilling_ackNo.TabIndex = 10;
             // 
-            // textBox1
+            // assessment_year
             // 
-            this.textBox1.Location = new System.Drawing.Point(345, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 9;
+            this.assessment_year.Location = new System.Drawing.Point(345, 85);
+            this.assessment_year.Name = "assessment_year";
+            this.assessment_year.Size = new System.Drawing.Size(100, 20);
+            this.assessment_year.TabIndex = 9;
             // 
-            // comboBox1
+            // client_name
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(345, 44);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(260, 21);
-            this.comboBox1.TabIndex = 8;
+            this.client_name.FormattingEnabled = true;
+            this.client_name.Location = new System.Drawing.Point(345, 44);
+            this.client_name.Name = "client_name";
+            this.client_name.Size = new System.Drawing.Size(260, 21);
+            this.client_name.TabIndex = 8;
             // 
             // Evcverification
             // 
@@ -190,22 +208,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Client ";
             // 
-            // Remarks
-            // 
-            this.Remarks.AutoSize = true;
-            this.Remarks.Location = new System.Drawing.Point(211, 278);
-            this.Remarks.Name = "Remarks";
-            this.Remarks.Size = new System.Drawing.Size(49, 13);
-            this.Remarks.TabIndex = 18;
-            this.Remarks.Text = "Remarks";
-            // 
-            // return_remarks
-            // 
-            this.return_remarks.Location = new System.Drawing.Point(345, 278);
-            this.return_remarks.Name = "return_remarks";
-            this.return_remarks.Size = new System.Drawing.Size(359, 20);
-            this.return_remarks.TabIndex = 19;
-            // 
             // ReturnFillling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -214,6 +216,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "ReturnFillling";
             this.Text = "ReturnFillling";
+            this.Load += new System.EventHandler(this.ReturnFillling_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -229,13 +232,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label Evcverification;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker dispatch_date;
+        private System.Windows.Forms.DateTimePicker returnFilling_date;
+        private System.Windows.Forms.TextBox returnFilling_ackNo;
+        private System.Windows.Forms.TextBox assessment_year;
+        private System.Windows.Forms.ComboBox client_name;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox evc_verication_status;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox return_remarks;
         private System.Windows.Forms.Label Remarks;

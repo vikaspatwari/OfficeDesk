@@ -40,5 +40,10 @@ namespace office_desk
             }
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
