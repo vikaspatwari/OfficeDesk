@@ -19,9 +19,10 @@ namespace office_desk.AppCode
         {
             OfficeDeskDB db = new OfficeDeskDB();
             var CD = db;
-             var CT = from currenttaskss in db.currenttaskss
-                                                      where currenttaskss.empId == empID
-                                                      select currenttaskss;
+             var CT = from currenttasks in db.currenttaskss
+                                                      where currenttasks.empId == empID
+                                                      select currenttasks;
+           
             
             return CT;
         }  
