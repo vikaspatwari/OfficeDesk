@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Office_Desk.AppCode;
-using office_desk.Models;
+using Office_Desk.Models;
 
 namespace Office_Desk
 {

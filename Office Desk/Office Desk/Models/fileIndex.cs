@@ -1,4 +1,4 @@
-﻿namespace office_desk.Models
+﻿namespace Office_Desk.Models
 {
     /// <summary>
     /// This is the data model class for the index of the physical files stored in the database.

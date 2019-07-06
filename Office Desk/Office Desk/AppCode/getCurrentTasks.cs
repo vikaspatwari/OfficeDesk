@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using office_desk.Models;
+using Office_Desk.Models;
 
-namespace office_desk.AppCode
+namespace Office_Desk.AppCode
 {
     // this class will be used to get the current tasks
     class getCurrentTasks

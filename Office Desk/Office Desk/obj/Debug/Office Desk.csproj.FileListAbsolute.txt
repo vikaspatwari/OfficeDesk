@@ -19,16 +19,3 @@ C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\obj\Debug\Of
 C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\obj\Debug\Office_Desk.Properties.Resources.resources
 C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\obj\Debug\office_desk.ReturnFillling.resources
 C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\obj\Debug\Office Desk.csproj.GenerateResource.Cache
-C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\Office Desk.exe.config
-C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\Office Desk.exe
-C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\Office Desk.pdb
-C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\EntityFramework.dll
-C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\EntityFramework5.Extended.NET4.dll
-C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\EntityFramework5.Extended.NET45.dll
-C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\EntityFramework5.Extended.NET451.dll
-C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\EntityFramework.xml
-C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\EntityFramework5.Extended.NET4.xml
-C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\EntityFramework5.Extended.NET45.xml
-C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\bin\Debug\EntityFramework5.Extended.NET451.xml
-C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\obj\Debug\Office Desk.exe
-C:\Users\Vikas\Dropbox\CA\Github\OfficeDesk\Office Desk\Office Desk\obj\Debug\Office Desk.pdb

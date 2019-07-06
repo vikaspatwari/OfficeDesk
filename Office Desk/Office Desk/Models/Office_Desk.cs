@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-namespace office_desk.Models
+namespace Office_Desk.Models
 {
 
     /// <summary>
@@ -17,6 +17,7 @@ namespace office_desk.Models
         public DbSet<currenttasks> currenttaskss { get; set; }
         public DbSet<fileindex> fileindexs { get; set; }
         public DbSet<returnfilling> returnfillings { get; set; }
-        public DbSet<>
+        public DbSet<users> userss { get; set; }
+        public DbSet<userRoles> userRoless { get; set; }
     }
 }
