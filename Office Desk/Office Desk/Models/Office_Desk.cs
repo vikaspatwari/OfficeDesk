@@ -12,6 +12,7 @@ namespace Office_Desk.Models
         public OfficeDeskDB() : base("Office_desk")
         {
         }
+      
         public DbSet<clients> clientss { get; set; }
         public DbSet<completedtasks> completedtaskss { get; set; }
         public DbSet<currenttasks> currenttaskss { get; set; }
@@ -19,5 +20,8 @@ namespace Office_Desk.Models
         public DbSet<returnfilling> returnfillings { get; set; }
         public DbSet<users> userss { get; set; }
         public DbSet<userRoles> userRoless { get; set; }
+        public DbSet<groups> groupss { get; set; }
+       
     }
+   
 }

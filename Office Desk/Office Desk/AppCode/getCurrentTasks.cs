@@ -20,8 +20,8 @@ namespace Office_Desk.AppCode
             OfficeDeskDB db = new OfficeDeskDB();
             var CD = db;
              var CT = from currenttasks in db.currenttaskss
-                                                      where currenttasks.empId == empID
-                                                      select currenttasks;
+                      where currenttasks.empId == empID
+                      select currenttasks;
            
             
             return CT;

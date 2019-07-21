@@ -1,4 +1,4 @@
-﻿namespace office_desk
+﻿namespace Office_Desk
 {
     partial class ManageClient
     {
@@ -28,7 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.client__groupid = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.office_deskDataSet = new Office_Desk.office_deskDataSet();
+            this.Aadhar_link_status = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.client = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.client_email = new System.Windows.Forms.TextBox();
             this.Email = new System.Windows.Forms.Label();
             this.bank_accountType = new System.Windows.Forms.ComboBox();
@@ -53,12 +59,20 @@
             this.ClientContact = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ClientName = new System.Windows.Forms.TextBox();
+            this.clientsTableAdapter = new Office_Desk.office_deskDataSetTableAdapters.clientsTableAdapter();
+            this.clientsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.office_deskDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.client)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.client__groupid);
+            this.groupBox1.Controls.Add(this.Aadhar_link_status);
+            this.groupBox1.Controls.Add(this.client);
             this.groupBox1.Controls.Add(this.client_email);
             this.groupBox1.Controls.Add(this.Email);
             this.groupBox1.Controls.Add(this.bank_accountType);
@@ -83,13 +97,50 @@
             this.groupBox1.Controls.Add(this.ClientContact);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.ClientName);
             this.groupBox1.Location = new System.Drawing.Point(99, 53);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(841, 490);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Manage Client";
+            // 
+            // client__groupid
+            // 
+            this.client__groupid.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "group_id", true));
+            this.client__groupid.Location = new System.Drawing.Point(745, 97);
+            this.client__groupid.Name = "client__groupid";
+            this.client__groupid.Size = new System.Drawing.Size(6, 2);
+            this.client__groupid.TabIndex = 27;
+            this.client__groupid.Values.Text = "";
+            this.client__groupid.Visible = false;
+            // 
+            // clientsBindingSource
+            // 
+            this.clientsBindingSource.DataMember = "clients";
+            this.clientsBindingSource.DataSource = this.office_deskDataSet;
+            // 
+            // office_deskDataSet
+            // 
+            this.office_deskDataSet.DataSetName = "office_deskDataSet";
+            this.office_deskDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // Aadhar_link_status
+            // 
+            this.Aadhar_link_status.Location = new System.Drawing.Point(587, 172);
+            this.Aadhar_link_status.Name = "Aadhar_link_status";
+            this.Aadhar_link_status.Size = new System.Drawing.Size(100, 20);
+            this.Aadhar_link_status.TabIndex = 26;
+            // 
+            // client
+            // 
+            this.client.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "name", true));
+            this.client.DataSource = this.clientsBindingSource;
+            this.client.DropDownWidth = 430;
+            this.client.Location = new System.Drawing.Point(295, 61);
+            this.client.Name = "client";
+            this.client.Size = new System.Drawing.Size(430, 21);
+            this.client.TabIndex = 25;
+            this.client.Text = "select client";
             // 
             // client_email
             // 
@@ -214,6 +265,7 @@
             this.btn_save.TabIndex = 10;
             this.btn_save.Text = "Save";
             this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // label5
             // 
@@ -288,12 +340,14 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Client";
             // 
-            // ClientName
+            // clientsTableAdapter
             // 
-            this.ClientName.Location = new System.Drawing.Point(295, 66);
-            this.ClientName.Name = "ClientName";
-            this.ClientName.Size = new System.Drawing.Size(430, 20);
-            this.ClientName.TabIndex = 0;
+            this.clientsTableAdapter.ClearBeforeFill = true;
+            // 
+            // clientsBindingSource1
+            // 
+            this.clientsBindingSource1.DataMember = "clients";
+            this.clientsBindingSource1.DataSource = this.office_deskDataSet;
             // 
             // ManageClient
             // 
@@ -303,8 +357,13 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "ManageClient";
             this.Text = "ManageClient";
+            this.Load += new System.EventHandler(this.ManageClient_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.office_deskDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.client)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -313,7 +372,6 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox ClientName;
         private System.Windows.Forms.TextBox ClientContact;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox ClientPAN;
@@ -337,5 +395,12 @@
         private System.Windows.Forms.Label group;
         private System.Windows.Forms.TextBox client_email;
         private System.Windows.Forms.Label Email;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox client;
+        private Office_Desk.office_deskDataSet office_deskDataSet;
+        private System.Windows.Forms.BindingSource clientsBindingSource;
+        private Office_Desk.office_deskDataSetTableAdapters.clientsTableAdapter clientsTableAdapter;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox Aadhar_link_status;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel client__groupid;
+        private System.Windows.Forms.BindingSource clientsBindingSource1;
     }
 }

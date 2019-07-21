@@ -28,9 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.task_assignee = new System.Windows.Forms.ComboBox();
-            this.client_name = new System.Windows.Forms.ComboBox();
+            this.client_id = new System.Windows.Forms.Label();
+            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.office_deskDataSet = new Office_Desk.office_deskDataSet();
+            this.assignee_id = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.task_assignee = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.assignment_date = new System.Windows.Forms.DateTimePicker();
             this.task_assigner = new System.Windows.Forms.ComboBox();
             this.task_remarks = new System.Windows.Forms.TextBox();
             this.task_status = new System.Windows.Forms.TextBox();
@@ -52,15 +58,27 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_save = new System.Windows.Forms.Button();
             this.btn_cancel = new System.Windows.Forms.Button();
-            this.assignment_date = new System.Windows.Forms.DateTimePicker();
+            this.clientsTableAdapter = new Office_Desk.office_deskDataSetTableAdapters.clientsTableAdapter();
+            this.usersTableAdapter = new Office_Desk.office_deskDataSetTableAdapters.usersTableAdapter();
+            this.client_name = new System.Windows.Forms.ComboBox();
+            this.clientname_textbox = new System.Windows.Forms.TextBox();
+            this.taskAssignee_textbox = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.office_deskDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.task_assignee)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.assignment_date);
-            this.groupBox1.Controls.Add(this.task_assignee);
+            this.groupBox1.Controls.Add(this.taskAssignee_textbox);
+            this.groupBox1.Controls.Add(this.clientname_textbox);
             this.groupBox1.Controls.Add(this.client_name);
+            this.groupBox1.Controls.Add(this.client_id);
+            this.groupBox1.Controls.Add(this.assignee_id);
+            this.groupBox1.Controls.Add(this.task_assignee);
+            this.groupBox1.Controls.Add(this.assignment_date);
             this.groupBox1.Controls.Add(this.task_assigner);
             this.groupBox1.Controls.Add(this.task_remarks);
             this.groupBox1.Controls.Add(this.task_status);
@@ -87,21 +105,56 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Manage Tasks";
             // 
+            // client_id
+            // 
+            this.client_id.AutoSize = true;
+            this.client_id.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "ID", true));
+            this.client_id.Location = new System.Drawing.Point(644, 128);
+            this.client_id.Name = "client_id";
+            this.client_id.Size = new System.Drawing.Size(0, 13);
+            this.client_id.TabIndex = 28;
+            // 
+            // clientsBindingSource
+            // 
+            this.clientsBindingSource.DataMember = "clients";
+            this.clientsBindingSource.DataSource = this.office_deskDataSet;
+            // 
+            // office_deskDataSet
+            // 
+            this.office_deskDataSet.DataSetName = "office_deskDataSet";
+            this.office_deskDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // assignee_id
+            // 
+            this.assignee_id.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "ID", true));
+            this.assignee_id.Location = new System.Drawing.Point(585, 69);
+            this.assignee_id.Name = "assignee_id";
+            this.assignee_id.Size = new System.Drawing.Size(6, 2);
+            this.assignee_id.TabIndex = 27;
+            this.assignee_id.Values.Text = "";
+            this.assignee_id.Visible = false;
+            // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataMember = "users";
+            this.usersBindingSource.DataSource = this.office_deskDataSet;
+            // 
             // task_assignee
             // 
-            this.task_assignee.FormattingEnabled = true;
-            this.task_assignee.Location = new System.Drawing.Point(365, 59);
+            this.task_assignee.DataSource = this.usersBindingSource;
+            this.task_assignee.DisplayMember = "user_name";
+            this.task_assignee.DropDownWidth = 200;
+            this.task_assignee.Location = new System.Drawing.Point(365, 69);
             this.task_assignee.Name = "task_assignee";
-            this.task_assignee.Size = new System.Drawing.Size(217, 21);
-            this.task_assignee.TabIndex = 21;
+            this.task_assignee.Size = new System.Drawing.Size(200, 21);
+            this.task_assignee.TabIndex = 26;
             // 
-            // client_name
+            // assignment_date
             // 
-            this.client_name.FormattingEnabled = true;
-            this.client_name.Location = new System.Drawing.Point(365, 128);
-            this.client_name.Name = "client_name";
-            this.client_name.Size = new System.Drawing.Size(272, 21);
-            this.client_name.TabIndex = 20;
+            this.assignment_date.Location = new System.Drawing.Point(365, 96);
+            this.assignment_date.Name = "assignment_date";
+            this.assignment_date.Size = new System.Drawing.Size(200, 20);
+            this.assignment_date.TabIndex = 22;
             // 
             // task_assigner
             // 
@@ -278,12 +331,37 @@
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = true;
             // 
-            // assignment_date
+            // clientsTableAdapter
             // 
-            this.assignment_date.Location = new System.Drawing.Point(365, 96);
-            this.assignment_date.Name = "assignment_date";
-            this.assignment_date.Size = new System.Drawing.Size(200, 20);
-            this.assignment_date.TabIndex = 22;
+            this.clientsTableAdapter.ClearBeforeFill = true;
+            // 
+            // usersTableAdapter
+            // 
+            this.usersTableAdapter.ClearBeforeFill = true;
+            // 
+            // client_name
+            // 
+            this.client_name.DataSource = this.clientsBindingSource;
+            this.client_name.DisplayMember = "name";
+            this.client_name.FormattingEnabled = true;
+            this.client_name.Location = new System.Drawing.Point(365, 128);
+            this.client_name.Name = "client_name";
+            this.client_name.Size = new System.Drawing.Size(200, 21);
+            this.client_name.TabIndex = 29;
+            // 
+            // clientname_textbox
+            // 
+            this.clientname_textbox.Location = new System.Drawing.Point(365, 122);
+            this.clientname_textbox.Name = "clientname_textbox";
+            this.clientname_textbox.Size = new System.Drawing.Size(200, 20);
+            this.clientname_textbox.TabIndex = 30;
+            // 
+            // taskAssignee_textbox
+            // 
+            this.taskAssignee_textbox.Location = new System.Drawing.Point(365, 60);
+            this.taskAssignee_textbox.Name = "taskAssignee_textbox";
+            this.taskAssignee_textbox.Size = new System.Drawing.Size(200, 20);
+            this.taskAssignee_textbox.TabIndex = 31;
             // 
             // ManageTasks
             // 
@@ -298,6 +376,10 @@
             this.Load += new System.EventHandler(this.ManageTasks_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.office_deskDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.task_assignee)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -316,8 +398,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox task_assignee;
-        private System.Windows.Forms.ComboBox client_name;
         private System.Windows.Forms.ComboBox task_assigner;
         private System.Windows.Forms.TextBox task_remarks;
         private System.Windows.Forms.TextBox task_status;
@@ -329,5 +409,16 @@
         private System.Windows.Forms.Button btn_save;
         private System.Windows.Forms.Button btn_cancel;
         private System.Windows.Forms.DateTimePicker assignment_date;
+        private office_deskDataSet office_deskDataSet;
+        private System.Windows.Forms.BindingSource clientsBindingSource;
+        private office_deskDataSetTableAdapters.clientsTableAdapter clientsTableAdapter;
+        private System.Windows.Forms.BindingSource usersBindingSource;
+        private office_deskDataSetTableAdapters.usersTableAdapter usersTableAdapter;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox task_assignee;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel assignee_id;
+        private System.Windows.Forms.Label client_id;
+        private System.Windows.Forms.ComboBox client_name;
+        private System.Windows.Forms.TextBox clientname_textbox;
+        private System.Windows.Forms.TextBox taskAssignee_textbox;
     }
 }
