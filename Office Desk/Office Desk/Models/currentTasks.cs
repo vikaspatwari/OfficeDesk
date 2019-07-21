@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace office_desk.Models
+namespace Office_Desk.Models
 {
     /// <summary>
     /// This is the data model class for the tasks which are currently assigned to the users.

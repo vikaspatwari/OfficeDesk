@@ -1,4 +1,4 @@
-﻿namespace office_desk.Models
+﻿namespace Office_Desk.Models
 {
     /// <summary>
     /// This is data model class for clients

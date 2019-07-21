@@ -25,12 +25,12 @@ namespace Office_Desk.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ULTIMATE\\SQLEXPRESS;Initial Catalog=office_desk.Models.OfficeDeskDB;I" +
-            "ntegrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=" +
-            "False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False")]
-        public string officedeskconnection {
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ULTIMATE\\SQLEXPRESS;Initial Catalog=office_desk;Integrated Security=T" +
+            "rue;Pooling=False")]
+        public string office_deskConnectionString {
             get {
-                return ((string)(this["officedeskconnection"]));
+                return ((string)(this["office_deskConnectionString"]));
             }
         }
     }

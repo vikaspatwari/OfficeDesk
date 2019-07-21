@@ -1,4 +1,4 @@
-﻿namespace office_desk
+﻿namespace Office_Desk
 {
     partial class MainForm
     {
@@ -28,18 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.manageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.assignToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tasksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.user_pasword = new System.Windows.Forms.TextBox();
+            this.user_name = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_clear = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.button2 = new System.Windows.Forms.Button();
+            this.kryptonManager1 = new ComponentFactory.Krypton.Toolkit.KryptonManager(this.components);
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -47,53 +51,71 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.manageToolStripMenuItem,
+            this.assignToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(905, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // fileToolStripMenuItem
+            // manageToolStripMenuItem
             // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newToolStripMenuItem,
-            this.closeToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "&File";
+            this.manageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clientsToolStripMenuItem,
+            this.usersToolStripMenuItem});
+            this.manageToolStripMenuItem.Name = "manageToolStripMenuItem";
+            this.manageToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.manageToolStripMenuItem.Text = "Manage";
             // 
-            // newToolStripMenuItem
+            // clientsToolStripMenuItem
             // 
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.newToolStripMenuItem.Text = "&New";
-            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
+            this.clientsToolStripMenuItem.Name = "clientsToolStripMenuItem";
+            this.clientsToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.clientsToolStripMenuItem.Text = "Clients";
+            this.clientsToolStripMenuItem.Click += new System.EventHandler(this.clientsToolStripMenuItem_Click);
             // 
-            // closeToolStripMenuItem
+            // usersToolStripMenuItem
             // 
-            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.closeToolStripMenuItem.Text = "&Close";
+            this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.usersToolStripMenuItem.Text = "Users";
+            this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
-            // textBox2
+            // assignToolStripMenuItem
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(121, 107);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(263, 20);
-            this.textBox2.TabIndex = 3;
+            this.assignToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tasksToolStripMenuItem});
+            this.assignToolStripMenuItem.Name = "assignToolStripMenuItem";
+            this.assignToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.assignToolStripMenuItem.Text = "Assign";
             // 
-            // textBox1
+            // tasksToolStripMenuItem
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(121, 30);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(263, 20);
-            this.textBox1.TabIndex = 2;
+            this.tasksToolStripMenuItem.Name = "tasksToolStripMenuItem";
+            this.tasksToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.tasksToolStripMenuItem.Text = "Tasks";
+            this.tasksToolStripMenuItem.Click += new System.EventHandler(this.tasksToolStripMenuItem_Click);
+            // 
+            // user_pasword
+            // 
+            this.user_pasword.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.user_pasword.Location = new System.Drawing.Point(121, 107);
+            this.user_pasword.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
+            this.user_pasword.Name = "user_pasword";
+            this.user_pasword.Size = new System.Drawing.Size(263, 20);
+            this.user_pasword.TabIndex = 3;
+            // 
+            // user_name
+            // 
+            this.user_name.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.user_name.Location = new System.Drawing.Point(121, 30);
+            this.user_name.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
+            this.user_name.Name = "user_name";
+            this.user_name.Size = new System.Drawing.Size(263, 20);
+            this.user_name.TabIndex = 2;
             // 
             // label2
             // 
@@ -130,8 +152,8 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.user_name, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.user_pasword, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(290, 168);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -147,7 +169,7 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.button1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btn_clear, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.button2, 1, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(121, 157);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -156,15 +178,14 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(263, 40);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
-            // button1
+            // btn_clear
             // 
-            this.button1.Location = new System.Drawing.Point(25, 10);
-            this.button1.Margin = new System.Windows.Forms.Padding(25, 10, 3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Clear";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_clear.Location = new System.Drawing.Point(3, 3);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(90, 25);
+            this.btn_clear.TabIndex = 5;
+            this.btn_clear.Values.Text = "clear";
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // button2
             // 
@@ -176,6 +197,10 @@
             this.button2.Text = "Ok";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // kryptonManager1
+            // 
+            this.kryptonManager1.GlobalPaletteMode = ComponentFactory.Krypton.Toolkit.PaletteModeManager.SparkleBlue;
             // 
             // MainForm
             // 
@@ -189,6 +214,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "Office Desk";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -202,17 +228,20 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox user_pasword;
+        private System.Windows.Forms.TextBox user_name;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btn_clear;
+        private ComponentFactory.Krypton.Toolkit.KryptonManager kryptonManager1;
+        private System.Windows.Forms.ToolStripMenuItem manageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clientsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem assignToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tasksToolStripMenuItem;
     }
 }
 

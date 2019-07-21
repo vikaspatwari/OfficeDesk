@@ -48,11 +48,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>..\..\..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\..\..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework5.Extended.NET4">
+      <HintPath>..\packages\EntityFramework5.Extended.5.0.100\lib\net40\EntityFramework5.Extended.NET4.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework5.Extended.NET45">
+      <HintPath>..\packages\EntityFramework5.Extended.5.0.100\lib\net45\EntityFramework5.Extended.NET45.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework5.Extended.NET451">
+      <HintPath>..\packages\EntityFramework5.Extended.5.0.100\lib\net451\EntityFramework5.Extended.NET451.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -65,7 +81,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppCode\authenticateUser.cs" />
+    <Compile Include="AppCode\getClientDetails.cs" />
     <Compile Include="AppCode\getCurrentTasks.cs" />
+    <Compile Include="AppCode\getGroupDetails.cs" />
+    <Compile Include="AppCode\getUserDetails.cs" />
+    <Compile Include="AppCode\updateClientDetails.cs" />
     <Compile Include="AppCode\updateCurrentTasks.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -73,11 +94,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="CurrentTasks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="CurrentTasks.Designer.cs">
+      <DependentUpon>CurrentTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVar.cs" />
+    <Compile Include="LaunchPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaunchPad.Designer.cs">
+      <DependentUpon>LaunchPad.cs</DependentUpon>
     </Compile>
     <Compile Include="ManageClient.cs">
       <SubType>Form</SubType>
@@ -91,12 +119,26 @@
     <Compile Include="ManageFileIndex.Designer.cs">
       <DependentUpon>ManageFileIndex.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageTasks.Designer.cs">
+      <DependentUpon>ManageTasks.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\clients.cs" />
     <Compile Include="Models\completedtasks.cs" />
     <Compile Include="Models\currenttasks.cs" />
     <Compile Include="Models\fileindex.cs" />
+    <Compile Include="Models\groups.cs" />
     <Compile Include="Models\office_desk.cs" />
     <Compile Include="Models\returnfilling.cs" />
+    <Compile Include="Models\userRoles.cs" />
+    <Compile Include="Models\users.cs" />
+    <Compile Include="office_deskDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>office_deskDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReturnFillling.cs">
@@ -108,14 +150,20 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="CurrentTasks.resx">
+      <DependentUpon>CurrentTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaunchPad.resx">
+      <DependentUpon>LaunchPad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageClient.resx">
       <DependentUpon>ManageClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageFileIndex.resx">
       <DependentUpon>ManageFileIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageTasks.resx">
+      <DependentUpon>ManageTasks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -125,10 +173,22 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="ReturnFillling.resx">
       <DependentUpon>ReturnFillling.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="office_deskDataSet.xsc">
+      <DependentUpon>office_deskDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="office_deskDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>office_deskDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="office_deskDataSet.xss">
+      <DependentUpon>office_deskDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -140,7 +200,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Icons\" />
